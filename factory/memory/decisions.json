@@ -1,0 +1,12 @@
+{
+  "layer": "Technical Decisions (ADR global)",
+  "decisions": [
+    {
+      "adr_id": "ADR-000",
+      "scope": "factory",
+      "title": "V2 hiérarchique 4 managers",
+      "status": "accepted",
+      "date": "2026-08-31"
+    }
+  ]
+}

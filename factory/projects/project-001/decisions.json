@@ -1,0 +1,15 @@
+{
+  "project_id": "project-001",
+  "decisions": [
+    {
+      "adr_id": "ADR-000",
+      "title": "Bootstrap Factory V2 hiérarchique",
+      "date": "2026-08-31",
+      "status": "accepted",
+      "context": "Migration V1 → V2 : hiérarchie 4 managers + DAG + auto-recovery",
+      "decision": "Adopter architecture V2 §2 + datastore factory/ + state machine 13 états",
+      "consequences": "Multi-projets, parallélisation auto, gates binaires",
+      "author": "factory-manager"
+    }
+  ]
+}

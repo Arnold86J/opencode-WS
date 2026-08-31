@@ -1,0 +1,21 @@
+{
+  "incident_id": "INC-1042",
+  "severity": "high",
+  "status": "investigating",
+  "service": "payments-api",
+  "detected_at": "2026-08-31T10:00:00Z",
+  "symptoms": ["latency +180%", "error rate +6%"],
+  "recommendation": "Investigate database connection pool",
+  "timeline": [
+    {"at": "2026-08-31T10:00:00Z", "event": "detected", "by": "observability-agent"},
+    {"at": "2026-08-31T10:05:00Z", "event": "classified", "by": "incident-manager", "class": "performance"}
+  ],
+  "rca": {
+    "status": "pending",
+    "root_cause": "API caching change deployment #842 (simulated)",
+    "confidence": 0.87
+  },
+  "workflow": ["detected","classified","assigned","mitigated","repaired","verified","closed","postmortem"],
+  "current_step": "classified",
+  "risk": "MEDIUM"
+}

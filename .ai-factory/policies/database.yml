@@ -1,0 +1,16 @@
+# V3 §11 — Database policies (apprises)
+destructive_migration:
+  require:
+    - backup_verification
+    - migration_simulation
+    - rollback_plan
+  approval:
+    risk: high
+  prevention: "Enforce linear migration history in CI (§9 Error Memory)"
+
+migration_general:
+  require:
+    - simulation_passed
+    - advisory_lock
+  approval:
+    risk: medium

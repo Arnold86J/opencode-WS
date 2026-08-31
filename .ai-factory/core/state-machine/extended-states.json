@@ -1,0 +1,22 @@
+{
+  "version": "V3-1.0",
+  "extends": "V2 13-state machine (IDEATION→MONITORING)",
+  "v2_states": ["IDEATION","DISCOVERY","PLANNING","DESIGN","ARCHITECTURE","DEVELOPMENT","INTEGRATION","QA","SECURITY","STAGING","RELEASE","PRODUCTION","MONITORING"],
+  "v3_overlay": {
+    "BOUCLE_AUTONOME": ["OBJECTIVE","PLAN","DESIGN","DEVELOP","TEST","REVIEW","DEPLOY","OBSERVE","MEASURE","LEARN","PRIORITIZE","IMPROVE"],
+    "mapping": {
+      "OBJECTIVE": "IDEATION+DISCOVERY",
+      "PLAN": "PLANNING",
+      "DESIGN": "DESIGN+ARCHITECTURE",
+      "DEVELOP": "DEVELOPMENT+INTEGRATION",
+      "TEST": "QA",
+      "REVIEW": "SECURITY (review)",
+      "DEPLOY": "STAGING+RELEASE+PRODUCTION",
+      "OBSERVE": "MONITORING (observability)",
+      "MEASURE": "MONITORING (analytics)",
+      "LEARN": "learning/policy",
+      "PRIORITIZE": "sprint planning",
+      "IMPROVE": "next OBJECTIVE"
+    }
+  }
+}

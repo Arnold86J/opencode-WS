@@ -1,0 +1,8 @@
+{
+  "layer": "Project Memory",
+  "project_id": "project-001",
+  "roadmap_ref": "factory/projects/project-001/roadmap.json",
+  "decisions_ref": "factory/projects/project-001/decisions.json",
+  "specs_ref": ".ai/project/requirements.md",
+  "updated_at": "2026-08-31"
+}

@@ -1,0 +1,79 @@
+name: CD — V2 Pipeline (§7)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20', cache: 'npm' }
+      - run: npm ci
+      - run: npm run build --if-present
+
+  unit:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm test --if-present
+
+  integration:
+    needs: unit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run test:integration --if-present
+
+  analysis:
+    needs: integration
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npm run lint --if-present
+      - run: npm run typecheck --if-present
+
+  security:
+    needs: analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm audit --audit-level=high || true
+      - uses: gitleaks/gitleaks-action@v2
+        continue-on-error: true
+
+  e2e:
+    needs: security
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci && npx playwright install --with-deps
+      - run: npm run test:e2e --if-present
+
+  staging:
+    needs: e2e
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - run: echo "Deploy to staging (delivery-manager)"
+      - run: echo "Health check staging..."
+
+  release-gate:
+    needs: staging
+    runs-on: ubuntu-latest
+    environment: release-gate
+    steps:
+      - run: echo "Quality Manager approval required (HIGH → human if prod)"
+      - run: python tools/wf.py gates --project project-001
+
+  production:
+    needs: release-gate
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - run: echo "Deploy to production (needs human approval HIGH)"

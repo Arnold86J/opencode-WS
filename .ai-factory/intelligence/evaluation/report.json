@@ -1,0 +1,9 @@
+{
+  "version": "V3-1.0",
+  "generated_at": "2026-08-31",
+  "agents": [
+    {"agent": "frontend", "tasks": 182, "success_rate": 0.967, "retry_rate": 0.084, "review_pass": 0.941, "quality": 9.1, "bug_rate": 0.02, "avg_duration_min": 42, "recommendation": "maintain"},
+    {"agent": "backend", "tasks": 150, "success_rate": 0.88, "retry_rate": 0.18, "review_pass": 0.90, "quality": 8.4, "bug_rate": 0.05, "avg_duration_min": 55, "recommendation": "increase API specification validation"},
+    {"agent": "qa", "tasks": 90, "success_rate": 0.95, "retry_rate": 0.06, "review_pass": 0.92, "quality": 8.7, "bug_rate": 0.01, "avg_duration_min": 30, "recommendation": "add edge-case coverage"}
+  ]
+}

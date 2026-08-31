@@ -1,0 +1,9 @@
+{
+  "version": "V3-1.0",
+  "projects": [
+    {"project_id": "project-001", "priority": "urgent", "share_percent": 60},
+    {"project_id": "project-002", "priority": "normal", "share_percent": 30},
+    {"project_id": "project-003", "priority": "low", "share_percent": 10}
+  ],
+  "resources": {"agent_capacity": 26, "parallel_slots": 8, "context_limit": "128k"}
+}

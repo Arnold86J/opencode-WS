@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "description": "Tâches en cours — max 1 par agent specialist, N parallèles si indépendantes",
+    "updated_at": "2026-08-31"
+  },
+  "tasks": []
+}

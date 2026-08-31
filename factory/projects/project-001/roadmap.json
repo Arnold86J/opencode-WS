@@ -1,0 +1,31 @@
+{
+  "project_id": "project-001",
+  "epics": [
+    {
+      "epic_id": "EPIC-001",
+      "title": "Discovery & Vision",
+      "phase": "DISCOVERY",
+      "tasks": ["TASK-001", "TASK-002"]
+    },
+    {
+      "epic_id": "EPIC-002",
+      "title": "Design System",
+      "phase": "DESIGN",
+      "tasks": ["TASK-003", "TASK-004"]
+    },
+    {
+      "epic_id": "EPIC-003",
+      "title": "Architecture & DB",
+      "phase": "ARCHITECTURE",
+      "tasks": ["TASK-005", "TASK-006"]
+    },
+    {
+      "epic_id": "EPIC-004",
+      "title": "Dashboard (exemple DAG V2 §3.3)",
+      "phase": "DEVELOPMENT",
+      "tasks": ["TASK-041", "TASK-042", "TASK-043", "TASK-044", "TASK-045", "TASK-046", "TASK-047", "TASK-048"]
+    }
+  ],
+  "critical_path": ["TASK-001", "TASK-003", "TASK-005", "TASK-045", "TASK-048"],
+  "updated_at": "2026-08-31"
+}

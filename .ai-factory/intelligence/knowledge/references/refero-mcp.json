@@ -1,0 +1,18 @@
+{
+  "source": "https://styles.refero.design/ — 2,000+ DESIGN.md examples + MCP",
+  "mcp": {
+    "url": "https://refero.design/mcp",
+    "for_agents": ["Cursor","Claude Code","Codex","v0","Lovable"],
+    "capabilities": "search all styles, real product screens, complete user flows — every style + screen + flow"
+  },
+  "spec": "https://styles.refero.design/design-md/design-md-specification",
+  "template": "https://styles.refero.design/design-md/design-md-template",
+  "active_reference": {
+    "style": "Linear — midnight precision instrument",
+    "id": "90ce5883-bb24-4466-93f7-801cd617b0d1",
+    "url": "https://styles.refero.design/style/90ce5883-bb24-4466-93f7-801cd617b0d1",
+    "why": "SaaS Factory dense system, dark canvas, low chrome — matches V3 dashboard/metrics"
+  },
+  "alternatives": ["Apple white room blue", "Notion paper notebook", "Superr warm notebook"],
+  "usage_in_factory": "UX_UI_agent loads .ai-factory/projects/project-001/design.md before any DS-001; FRONTEND_agent reads it per AC; UI_REVIEW checks against web-design-guidelines"
+}

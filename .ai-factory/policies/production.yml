@@ -1,0 +1,18 @@
+# V3 §11 — Deployment policies
+production_deployment:
+  require:
+    - tests_passed
+    - security_passed
+    - rollback_plan
+  approval:
+    risk: high
+  canary:
+    enabled: true
+    traffic: 10%
+
+staging_deployment:
+  require:
+    - build_passed
+    - unit_tests_passed
+  approval:
+    risk: low

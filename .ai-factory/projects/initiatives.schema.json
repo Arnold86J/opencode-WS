@@ -1,0 +1,14 @@
+{
+  "$schema": "initiative-hierarchy-v3",
+  "description": "7 niveaux V3 §6",
+  "levels": [
+    {"level": "Objective", "id": "OBJ-001", "example": "Améliorer la rétention"},
+    {"level": "Initiative", "id": "INIT-001", "example": "Refonte onboarding"},
+    {"level": "Epic", "id": "EPIC-001", "example": "Nouveau parcours de bienvenue"},
+    {"level": "Feature", "id": "FEAT-001", "example": "Choix des préférences"},
+    {"level": "Story", "id": "STORY-001", "example": "En tant qu'utilisateur, je veux..."},
+    {"level": "Task", "id": "TASK-001", "example": "Créer écran onboarding"},
+    {"level": "Action", "id": "ACT-001", "example": "Créer component PreferenceCard"}
+  ],
+  "rules": "Chaque niveau porte parent_id, objective linkage, KR alignment, et tasks feuilles mappées au DAG"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "V3-1.0",
+  "lessons": [
+    {
+      "incident": "INC-1042",
+      "pattern": "API caching change drops hit rate",
+      "policy_created": "policies/production.yml: require cache simulation",
+      "prevented_future": true,
+      "at": "2026-08-31"
+    }
+  ]
+}

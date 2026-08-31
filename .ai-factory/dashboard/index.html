@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Mission Control V3 — AI Software Factory</title>
+<style>
+body{font-family:monospace;background:#0a0a0a;color:#0f0;padding:20px}
+.card{border:1px solid #333;padding:12px;margin:8px 0;background:#111}
+h1{color:#fff}
+</style>
+</head>
+<body>
+<h1>SOFTWARE FACTORY V3 — Mission Control</h1>
+<div class="card" id="dash">Loading...</div>
+<script>
+fetch('mission-control.json').then(r=>r.json()).then(j=>{
+  document.getElementById('dash').innerHTML = `
+Projects: ${j.projects} | Objectives: ${j.objectives} | Incidents: ${j.incidents}<br>
+Active Agents: ${j.active_agents} | Loop: ${j.loop_stage} | Progress: ${j.progress_percent}%<br>
+<pre>${JSON.stringify(j,null,2)}</pre>`;
+});
+</script>
+</body>
+</html>

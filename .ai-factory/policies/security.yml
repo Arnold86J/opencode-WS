@@ -1,0 +1,11 @@
+# V3 §11 — Security policies
+secrets:
+  scan: gitleaks
+  block_on: high
+
+owasp:
+  required: true
+  block_on: critical
+
+deps:
+  audit_level: high

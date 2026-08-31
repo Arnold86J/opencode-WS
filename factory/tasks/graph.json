@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "version": "V2-1.0",
+    "description": "Task Graph global DAG \u2014 tous projets. Calcul READY front auto.",
+    "updated_at": "2026-08-31"
+  },
+  "tasks": [
+    {
+      "task_id": "TASK-001",
+      "project_id": "project-001",
+      "title": "Vision + MVP",
+      "agent": "product-manager",
+      "manager": "product-manager",
+      "status": "COMPLETED",
+      "depends_on": [],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-001-vision",
+      "completed_at": "2026-08-31T15:45:00Z",
+      "output": {
+        "vision": ".ai-factory/projects/project-001/vision.md",
+        "design_ref": ".ai-factory/projects/project-001/design.md"
+      }
+    },
+    {
+      "task_id": "TASK-002",
+      "project_id": "project-001",
+      "title": "User Stories + AC",
+      "agent": "business-analyst",
+      "manager": "product-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-001"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-002-stories",
+      "completed_at": "2026-08-31T15:46:00Z",
+      "output": {
+        "stories": ".ai-factory/projects/project-001/stories.md"
+      }
+    },
+    {
+      "task_id": "TASK-003",
+      "project_id": "project-001",
+      "title": "UX Research",
+      "agent": "ux-research",
+      "manager": "product-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-002"
+      ],
+      "retry_policy": {
+        "max_attempts": 2,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-003-ux",
+      "completed_at": "2026-08-31T15:47:00Z"
+    },
+    {
+      "task_id": "TASK-041",
+      "project_id": "project-001",
+      "title": "Analyse UX Dashboard",
+      "agent": "ux-research",
+      "manager": "product-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-003"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-041-ux-dash",
+      "completed_at": "2026-08-31T15:48:00Z"
+    },
+    {
+      "task_id": "TASK-042",
+      "project_id": "project-001",
+      "title": "Design Dashboard",
+      "agent": "ux-ui",
+      "manager": "product-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-041"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "MEDIUM",
+      "branch": "feature/TASK-042-design-dash",
+      "completed_at": "2026-08-31T15:49:00Z"
+    },
+    {
+      "task_id": "TASK-043",
+      "project_id": "project-001",
+      "title": "API stats",
+      "agent": "backend",
+      "manager": "tech-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-042"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "MEDIUM",
+      "branch": "feature/TASK-043-api-stats",
+      "completed_at": "2026-08-31T15:50:00Z"
+    },
+    {
+      "task_id": "TASK-044",
+      "project_id": "project-001",
+      "title": "Sch\u00e9ma data Dashboard",
+      "agent": "database-architect",
+      "manager": "tech-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-042"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "MEDIUM",
+      "branch": "feature/TASK-044-schema",
+      "completed_at": "2026-08-31T15:50:00Z"
+    },
+    {
+      "task_id": "TASK-045",
+      "project_id": "project-001",
+      "title": "Implement dashboard (DAG join)",
+      "agent": "frontend",
+      "manager": "tech-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-042",
+        "TASK-043",
+        "TASK-044"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-045-dashboard",
+      "completed_at": "2026-08-31T15:51:00Z"
+    },
+    {
+      "task_id": "TASK-046",
+      "project_id": "project-001",
+      "title": "Unit tests dashboard",
+      "agent": "qa",
+      "manager": "quality-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-045"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-046-unit",
+      "completed_at": "2026-08-31T15:52:00Z"
+    },
+    {
+      "task_id": "TASK-047",
+      "project_id": "project-001",
+      "title": "E2E dashboard",
+      "agent": "e2e-test",
+      "manager": "quality-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-046"
+      ],
+      "retry_policy": {
+        "max_attempts": 3,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "LOW",
+      "branch": "feature/TASK-047-e2e",
+      "completed_at": "2026-08-31T15:53:00Z"
+    },
+    {
+      "task_id": "TASK-048",
+      "project_id": "project-001",
+      "title": "Security review dashboard",
+      "agent": "security",
+      "manager": "quality-manager",
+      "status": "COMPLETED",
+      "depends_on": [
+        "TASK-047"
+      ],
+      "retry_policy": {
+        "max_attempts": 2,
+        "backoff": "exponential",
+        "escalate_after_failure": true
+      },
+      "risk": "MEDIUM",
+      "branch": "feature/TASK-048-sec",
+      "completed_at": "2026-08-31T15:54:00Z"
+    }
+  ]
+}

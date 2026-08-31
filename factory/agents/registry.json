@@ -1,0 +1,110 @@
+{
+  "factory": "ai-software-factory",
+  "updated_at": "2026-08-31",
+  "levels": {
+    "L1_FactoryManager": [
+      "factory-manager"
+    ],
+    "L2_Orchestrators": [
+      "orchestrator-project-001"
+    ],
+    "L2_DomainManagers": [
+      "product-manager",
+      "tech-manager",
+      "quality-manager",
+      "delivery-manager"
+    ],
+    "L3_Specialists": [
+      "product-manager-specialist",
+      "business-analyst",
+      "ux-research",
+      "ux-ui",
+      "ui-review",
+      "software-architect",
+      "database-architect",
+      "frontend",
+      "backend",
+      "mobile",
+      "integration",
+      "qa",
+      "e2e-test",
+      "bug-hunter",
+      "security",
+      "debugger",
+      "review-manager",
+      "arch-reviewer",
+      "security-reviewer",
+      "performance-reviewer",
+      "maintainability-reviewer",
+      "code-reviewer",
+      "devops",
+      "documentation"
+    ]
+  },
+  "agents": [
+    {
+      "id": "factory-manager",
+      "level": "L1",
+      "status": "active",
+      "projects": [
+        "project-001"
+      ],
+      "capacity": 10
+    },
+    {
+      "id": "orchestrator-project-001",
+      "level": "L2",
+      "status": "active",
+      "project": "project-001"
+    },
+    {
+      "id": "product-manager",
+      "level": "L2-Manager",
+      "status": "active"
+    },
+    {
+      "id": "tech-manager",
+      "level": "L2-Manager",
+      "status": "active"
+    },
+    {
+      "id": "quality-manager",
+      "level": "L2-Manager",
+      "status": "active"
+    },
+    {
+      "id": "delivery-manager",
+      "level": "L2-Manager",
+      "status": "active"
+    },
+    {
+      "id": "debugger",
+      "level": "L3",
+      "status": "active",
+      "role": "Error Analyzer"
+    },
+    {
+      "id": "review-manager",
+      "level": "L3",
+      "status": "active",
+      "role": "Aggregation"
+    }
+  ],
+  "health": {
+    "active_agents": 12,
+    "idle_agents": 14,
+    "failed_tasks_last_24h": 0,
+    "auto_fixed": 0
+  },
+  "mobile_options": {
+    "expo": "React Native cross-platform (default)",
+    "10x": "SwiftUI native 10x.app (iOS premium, macOS 14+ + Xcode 16+)"
+  },
+  "integrations": {
+    "aceternity": "ui.aceternity.com MCP + shadcn registry",
+    "refero": "styles.refero.design 2000+ DESIGN.md + MCP",
+    "mobbin": "mobbin.com 1,428 apps/621k screens API + Figma plugin",
+    "godly": "godly.website curation Rejiggle",
+    "10x": "10x.app SwiftUI builder open-source"
+  }
+}

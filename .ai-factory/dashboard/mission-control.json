@@ -1,0 +1,18 @@
+{
+  "version": "V3-1.0",
+  "factory": "ai-software-factory",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "projects": 1,
+  "objectives": 1,
+  "incidents": 1,
+  "active_agents": 12,
+  "running_tasks": 0,
+  "completed": 0,
+  "failed": 0,
+  "auto_fixed": 0,
+  "human_approvals": 0,
+  "current_project": "project-001",
+  "loop_stage": "OBSERVE",
+  "progress_percent": 12,
+  "metrics": {"throughput_per_day": 0, "lead_time_hours": 0, "failure_rate": 0, "mttr_minutes": 0, "human_intervention_rate": 0}
+}

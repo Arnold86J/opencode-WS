@@ -1,0 +1,10 @@
+{
+  "version": "V3-1.0",
+  "source": "WF-V3 §9 + §12",
+  "matrix": [
+    {"level": "LOW", "action": "Automatique", "examples": ["créer composant UI", "écrire test", "refactor interne", "fix latency <10%"], "approval": "none", "can_self_heal": true},
+    {"level": "MEDIUM", "action": "Manager approval", "examples": ["modifier API publique", "changer schema DB", "config infra", "cache hit drop"], "approval": "manager", "can_self_heal": "with_approval"},
+    {"level": "HIGH", "action": "Human approval", "examples": ["supprimer données prod", "déployer prod", "migration destructive", "arch contestée"], "approval": "human", "can_self_heal": false},
+    {"level": "CRITICAL", "action": "Emergency human control", "examples": ["incident P0 prod down", "data breach", "cascade failure"], "approval": "human_emergency", "can_self_heal": false}
+  ]
+}

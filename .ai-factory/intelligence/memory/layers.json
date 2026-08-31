@@ -1,0 +1,14 @@
+{
+  "version": "V3-1.0",
+  "extends": "V2 §9 (6 couches)",
+  "layers": [
+    {"name": "Project Memory", "path": "projects/*", "content": "roadmap, decisions, specs"},
+    {"name": "Agent Memory", "path": "intelligence/memory/agent-memory.json", "content": "patterns, prefs, historique"},
+    {"name": "Technical Decisions", "path": "intelligence/knowledge/adrs.json", "content": "ADR + rationale"},
+    {"name": "Lessons Learned", "path": "intelligence/learning/lessons.json", "content": "post-mortems"},
+    {"name": "Error Memory", "path": "factory/memory/error-memory.json", "content": "patterns récurrents + fixes"},
+    {"name": "User Preferences", "path": "factory/memory/preferences.json", "content": "style, conventions"},
+    {"name": "Policy Memory (V3)", "path": "policies/*.yml", "content": "règles apprises → politiques (§11)"},
+    {"name": "Simulation Memory (V3)", "path": "intelligence/simulation/history.json", "content": "scénarios + recommandations"}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "source": "Aceternity UI — https://ui.aceternity.com/ (200+ React + Tailwind + Motion, shadcn compatible)",
+  "install": {
+    "init": "npx aceternity-ui init  # ou: npx shadcn@latest init",
+    "add_one": "npx aceternity-ui add bento-grid  # ou: npx shadcn@latest add aceternity/bento-grid",
+    "add_all": "npx aceternity-ui add --all",
+    "with_demo": "npx aceternity-ui add bento-grid -e"
+  },
+  "mcp": {
+    "description": "MCP Server for AI agents (browse/search/install via natural language)",
+    "components_json_registry": "https://ui.aceternity.com/registry/{name}.json",
+    "for_agent": "Add 'aceternity' registry to components.json:13 then: npx shadcn@latest add aceternity/{component}"
+  },
+  "for_factory": {
+    "frontend_agent": "Use 'frontend-design' (838K) + 'vercel-react-best-practices' (678K) + 'web-design-guidelines' (594K) after aceternity install to verify perf/a11y",
+    "blocks_used": ["hero-sections (23)", "feature-sections (22)", "bento-grids (6)", "backgrounds (11)", "logo-clouds (6)", "shaders (3)"],
+    "where": "src/components/ui/aceternity/"
+  },
+  "policy": "Free components OK — All-Access Pass premium blocks require license check before commit"
+}

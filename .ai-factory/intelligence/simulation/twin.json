@@ -1,0 +1,70 @@
+{
+  "twin_id": "twin-project-001",
+  "project_id": "project-001",
+  "layers": [
+    "frontend",
+    "api",
+    "services",
+    "database",
+    "infrastructure"
+  ],
+  "components": [
+    {
+      "layer": "frontend",
+      "items": [
+        "dashboard",
+        "onboarding"
+      ]
+    },
+    {
+      "layer": "api",
+      "items": [
+        "payments-api",
+        "bets-api"
+      ]
+    },
+    {
+      "layer": "services",
+      "items": [
+        "cache",
+        "queue"
+      ]
+    },
+    {
+      "layer": "database",
+      "items": [
+        "PostgreSQL"
+      ]
+    },
+    {
+      "layer": "infrastructure",
+      "items": [
+        "Docker",
+        "GH Actions"
+      ]
+    }
+  ],
+  "last_impact": {
+    "change": "Modify API caching",
+    "risk": "MEDIUM",
+    "affected": [
+      "cache hit rate",
+      "latency"
+    ],
+    "mobile_choice": "twin decides per initiative"
+  },
+  "mobile_options": {
+    "expo": {
+      "stack": "React Native + Expo",
+      "target": "iOS+Android cross-platform",
+      "when": "default"
+    },
+    "10x": {
+      "stack": "SwiftUI 5.9 + XcodeGen + Simulator",
+      "source": "https://www.10x.app + github.com/10x-app-builder/10x",
+      "target": "iOS natif",
+      "when": "Objective KR = premium iOS",
+      "prereqs": "macOS 14+ + Xcode 16+ + xcodegen"
+    }
+  }
+}

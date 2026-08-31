@@ -1,0 +1,31 @@
+{
+  "factory": "ai-software-factory",
+  "version": "V2-1.0",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "projects": 1,
+  "active_agents": 12,
+  "running_tasks": 0,
+  "completed": 0,
+  "failed": 0,
+  "auto_fixed": 0,
+  "human_approvals": 0,
+  "current_project": {
+    "project_id": "project-001",
+    "state": "IDEATION",
+    "progress_percent": 0,
+    "gates": {"product":"pending","design":"pending","architecture":"pending","development":"pending","release":"pending"}
+  },
+  "agents_status": {
+    "frontend": "idle",
+    "backend": "idle",
+    "qa": "waiting",
+    "security": "pending"
+  },
+  "metrics": {
+    "throughput_per_day": 0,
+    "lead_time_hours": 0,
+    "failure_rate": 0,
+    "mttr_minutes": 0,
+    "human_intervention_rate": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "description": "Backlog — tâches en attente, triées par priorité/dépendance. Seul l'Orchestrateur écrit ici.",
+    "updated_at": "2026-08-31"
+  },
+  "tasks": [
+    {
+      "task_id": "PROD-001",
+      "title": "Définir vision + MVP + roadmap",
+      "agent": "product-manager",
+      "priority": "P0",
+      "phase": "product",
+      "status": "todo",
+      "depends_on": [],
+      "acceptance_criteria": ["vision.md complet", "roadmap priorisée", "MVP scope figé"],
+      "estimate": "M"
+    },
+    {
+      "task_id": "BA-001",
+      "title": "Décomposer en User Stories + Technical Tasks",
+      "agent": "business-analyst",
+      "priority": "P0",
+      "phase": "product",
+      "status": "todo",
+      "depends_on": ["PROD-001"],
+      "acceptance_criteria": ["chaque US a des AC testables", "backlog.json enrichi"],
+      "estimate": "M"
+    },
+    {
+      "task_id": "UX-001",
+      "title": "UX Research — personas + journeys",
+      "agent": "ux-research",
+      "priority": "P1",
+      "phase": "design",
+      "status": "todo",
+      "depends_on": ["BA-001"],
+      "estimate": "M"
+    },
+    {
+      "task_id": "DS-001",
+      "title": "Design System + wireframes",
+      "agent": "ux-ui",
+      "priority": "P0",
+      "phase": "design",
+      "status": "todo",
+      "depends_on": ["UX-001"],
+      "estimate": "L"
+    },
+    {
+      "task_id": "ARCH-001",
+      "title": "Architecture + tech-stack + API + infra",
+      "agent": "software-architect",
+      "priority": "P0",
+      "phase": "architecture",
+      "status": "todo",
+      "depends_on": ["DS-001"],
+      "estimate": "L"
+    },
+    {
+      "task_id": "DB-001",
+      "title": "Modèle de données + migrations",
+      "agent": "database-architect",
+      "priority": "P0",
+      "phase": "architecture",
+      "status": "todo",
+      "depends_on": ["ARCH-001"],
+      "estimate": "M"
+    }
+  ]
+}

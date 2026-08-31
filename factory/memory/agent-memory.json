@@ -1,0 +1,8 @@
+{
+  "layer": "Agent Memory",
+  "agents": {
+    "frontend": { "patterns": ["React + Tailwind", "zod + rhf"], "success_rate": 1.0 },
+    "backend": { "patterns": ["Prisma", "zod validation"], "success_rate": 1.0 },
+    "debugger": { "patterns": ["root cause from logs + git diff"], "success_rate": 1.0 }
+  }
+}

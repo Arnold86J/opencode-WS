@@ -1,0 +1,21 @@
+{
+  "version": "V3-1.0",
+  "loop": ["OBJECTIVE","PLAN","DESIGN","DEVELOP","TEST","REVIEW","DEPLOY","OBSERVE","MEASURE","LEARN","PRIORITIZE","IMPROVE"],
+  "description": "Boucle autonome complète §2 — Factory learns & improves continuously",
+  "transitions": {
+    "OBJECTIVE": "PLAN",
+    "PLAN": "DESIGN",
+    "DESIGN": "DEVELOP",
+    "DEVELOP": "TEST",
+    "TEST": "REVIEW",
+    "REVIEW": "DEPLOY",
+    "DEPLOY": "OBSERVE",
+    "OBSERVE": "MEASURE",
+    "MEASURE": "LEARN",
+    "LEARN": "PRIORITIZE",
+    "PRIORITIZE": "IMPROVE",
+    "IMPROVE": "OBJECTIVE"
+  },
+  "entry": "STRATEGIC_AGENT creates Objectives + KRs (§4)",
+  "exit_condition": "Objective KRs measured — next iteration auto-triggered"
+}

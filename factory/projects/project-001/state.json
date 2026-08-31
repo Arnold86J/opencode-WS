@@ -1,0 +1,47 @@
+{
+  "project_id": "project-001",
+  "state": "MONITORING",
+  "previous_state": "PRODUCTION",
+  "transitions": [
+    {
+      "from": "IDEATION",
+      "to": "RELEASE",
+      "at": "2026-08-31",
+      "gate": "release",
+      "risk": "LOW"
+    },
+    {
+      "from": "RELEASE",
+      "to": "PRODUCTION",
+      "at": "2026-08-31",
+      "gate": "release",
+      "risk": "HIGH"
+    },
+    {
+      "from": "PRODUCTION",
+      "to": "MONITORING",
+      "at": "2026-08-31",
+      "gate": null,
+      "risk": "LOW"
+    }
+  ],
+  "gates": {
+    "product": "pass",
+    "design": "pass",
+    "architecture": "pass",
+    "development": "pass",
+    "release": "pass"
+  },
+  "metrics": {
+    "tasks_total": 7,
+    "tasks_completed": 11,
+    "tasks_failed": 0,
+    "tasks_blocked": 4,
+    "progress_percent": 0
+  },
+  "risk_mode": "AUTONOMOUS",
+  "updated_at": "2026-08-31T00:00:00Z",
+  "orchestrator": "orchestrator-project-001",
+  "next_gate": "product",
+  "state_machine_version": "V2-1.0"
+}

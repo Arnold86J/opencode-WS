@@ -1,0 +1,13 @@
+{
+  "source": "https://mobbin.com/ + https://docs.mobbin.com/api-reference/screens/search-screens-with-natural-language",
+  "stats": "1,428 apps | 621,500 screens | 323,900 flows",
+  "figma_plugin": "https://www.figma.com/community/plugin/1332649462188834894/mobbin",
+  "api": "POST https://api.mobbin.com/v1/screens/search — Bearer Team/Enterprise, body {query, platform: ios|web, mode: deep|standard, limit}",
+  "query_rules": "Describe one screen plain language — UI elements + relation. Good: 'login screen with biometric authentication', 'checkout page with promo code field and Apple Pay button'. Avoid: multiple screens/intents, negations, vague style words, keyword lists.",
+  "for_factory": {
+    "ux_research": "Search before DS-001 — provide 3-5 screens as reference to UX_UI + FRONTEND",
+    "prompt_injection": "Add to TASK: 'Reference Mobbin: {mobbin_url} — reproduce structure/spacing, not copy pixels'",
+    "without_key": "Use manual search https://mobbin.com/search + Figma plugin + mock mode tools/mobbin.py"
+  },
+  "example_patterns": ["Onboarding", "Paywall", "Checkout", "Settings", "Wallet"]
+}

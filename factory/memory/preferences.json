@@ -1,0 +1,9 @@
+{
+  "layer": "User Preferences",
+  "preferences": {
+    "language": "fr",
+    "code_style": "TypeScript strict, conventional commits, zod validation",
+    "git": "feature branches, PR auto, squash merge",
+    "risk_tolerance": "LOW auto, MEDIUM manager, HIGH human"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "version": "V3-1.0",
+  "initiatives": [
+    {
+      "initiative_id": "INIT-001",
+      "objective_id": "OBJ-001",
+      "kr_ids": ["KR2", "KR4"],
+      "title": "Refonte onboarding",
+      "status": "planned",
+      "projects": ["project-001"],
+      "epics": [
+        {
+          "epic_id": "EPIC-010",
+          "title": "Nouveau parcours de bienvenue",
+          "features": [
+            {
+              "feature_id": "FEAT-010",
+              "title": "Choix des préférences",
+              "stories": [
+                {
+                  "story_id": "STORY-010",
+                  "title": "En tant qu'utilisateur, je veux choisir mes préférences pour une expérience personnalisée",
+                  "tasks": ["TASK-001", "TASK-002"],
+                  "actions": [
+                    {"action_id": "ACT-001", "title": "Créer component PreferenceCard", "agent": "frontend"},
+                    {"action_id": "ACT-002", "title": "API POST /preferences", "agent": "backend"}
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "owner": "factory-coo",
+      "created_at": "2026-08-31"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "layer": "Error Memory",
+  "patterns": [
+    {
+      "pattern": "PostgreSQL migration conflict",
+      "known_issue": "Migration ordering problem with concurrent branches",
+      "previous_solution": "Use advisory locks + ordered migration runner",
+      "recommended_prevention": "Enforce linear migration history in CI",
+      "occurrences": 0
+    },
+    {
+      "pattern": "Type error: missing zod validation",
+      "known_issue": "Backend accepts negative odds",
+      "previous_solution": "Add z.number().positive() + unit test",
+      "recommended_prevention": "CI typecheck + zod at entry",
+      "occurrences": 0
+    }
+  ]
+}

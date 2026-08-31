@@ -1,0 +1,15 @@
+{
+  "version": "V3-1.0",
+  "simulations": [
+    {
+      "id": "SIM-001",
+      "topic": "Architecture choice",
+      "options": ["monolith","microservices","modular"],
+      "criteria": ["cost","performance","complexity","scalability","security","maintenance"],
+      "scores": {"monolith": 6, "microservices": 5, "modular": 8.7},
+      "recommendation": "modular",
+      "confidence": 0.87,
+      "at": "2026-08-31"
+    }
+  ]
+}
