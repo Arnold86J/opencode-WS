@@ -8,12 +8,70 @@
       "owner": "strategic-agent",
       "status": "active",
       "key_results": [
-        {"kr_id": "KR1", "title": "Increase retention", "target": "+15%", "metric": "WAU", "current": "0%"},
-        {"kr_id": "KR2", "title": "Improve onboarding", "target": "completion 80%", "metric": "onboarding_rate", "current": "45%"},
-        {"kr_id": "KR3", "title": "Reduce crashes", "target": "<0.5%", "metric": "crash_rate", "current": "2.1%"},
-        {"kr_id": "KR4", "title": "Improve feature discovery", "target": "+20%", "metric": "feature_adoption", "current": "0%"}
+        {
+          "kr_id": "KR1",
+          "title": "Increase retention",
+          "target": "+15%",
+          "metric": "WAU",
+          "current": "0%"
+        },
+        {
+          "kr_id": "KR2",
+          "title": "Improve onboarding",
+          "target": "completion 80%",
+          "metric": "onboarding_rate",
+          "current": "45%"
+        },
+        {
+          "kr_id": "KR3",
+          "title": "Reduce crashes",
+          "target": "<0.5%",
+          "metric": "crash_rate",
+          "current": "2.1%"
+        },
+        {
+          "kr_id": "KR4",
+          "title": "Improve feature discovery",
+          "target": "+20%",
+          "metric": "feature_adoption",
+          "current": "0%"
+        }
       ],
-      "initiatives": ["INIT-001"],
+      "initiatives": [
+        "INIT-001"
+      ],
+      "created_at": "2026-08-31"
+    },
+    {
+      "objective_id": "OBJ-002",
+      "title": "Version web interactive ebook 100 expressions indispensables",
+      "source": "Version web interactive ebook 100 expressions indispensables",
+      "owner": "strategic-agent",
+      "status": "active",
+      "key_results": [
+        {
+          "kr_id": "KR1",
+          "title": "comprehension expressions",
+          "target": "TBD",
+          "metric": "comprehension expressions",
+          "current": "0%"
+        },
+        {
+          "kr_id": "KR2",
+          "title": "parler plus naturel",
+          "target": "TBD",
+          "metric": "parler plus naturel",
+          "current": "0%"
+        },
+        {
+          "kr_id": "KR3",
+          "title": "acces mobile audio",
+          "target": "TBD",
+          "metric": "acces mobile audio",
+          "current": "0%"
+        }
+      ],
+      "initiatives": [],
       "created_at": "2026-08-31"
     }
   ]

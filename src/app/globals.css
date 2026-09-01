@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #FF6B00;
+  --orange-dark: #E55E00;
+  --orange-light: #FFF0E6;
+  --orange-muted: #FF8C32;
+}
+
+* { font-variant-ligatures: common-ligatures; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #1a1a1a; background: #fafaf8; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #FF6B00; border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }

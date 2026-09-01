@@ -1,0 +1,19 @@
+{
+  "project_id": "project-002",
+  "state": "DEVELOPMENT",
+  "previous_state": null,
+  "transitions": [],
+  "gates": {
+    "product": "pass",
+    "design": "pass",
+    "architecture": "pass",
+    "development": "pass",
+    "release": "pass"
+  },
+  "metrics": {
+    "tasks_total": 0,
+    "tasks_completed": 0,
+    "progress_percent": 0
+  },
+  "updated_at": "2026-08-31T00:00:00Z"
+}
